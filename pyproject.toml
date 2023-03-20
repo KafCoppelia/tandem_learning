@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "tandem-learning"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+license = "GPLv3"
+readme = "README.md"
+packages = [{include = "tandem_learning"}]
+
+[tool.poetry.dependencies]
+python = "~3.9"
+torch = "1.12.1"
+torchvision = "0.13.1"
+torchaudio = "0.12.1"
+torchsummary = "1.5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
